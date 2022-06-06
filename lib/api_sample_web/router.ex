@@ -18,6 +18,7 @@ defmodule ApiSampleWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/api", ApiController, :index
   end
 
   # Other scopes may use custom stacks.
